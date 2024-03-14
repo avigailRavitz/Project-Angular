@@ -9,8 +9,7 @@ import { Category } from '../../../entities/Category.model';
 import { CategoryService } from '../../../../category.service';
 import { RecipteService } from '../../recipte.service';
 import { Recipe } from '../../../entities/Recipe.model';
-import { response } from 'express';
-import { error } from 'console';
+
 
 @Component({
   selector: 'app-add-recipe',
@@ -30,7 +29,6 @@ export class AddRecipeComponent implements OnInit {
   
  
     ngOnInit(): void {
-    console.log("addRecipe")
    // const isLoggedIn = sessionStorage.getItem('username') && sessionStorage.getItem('password');
     // if (!isLoggedIn) {
     //   {
@@ -95,7 +93,6 @@ addIngredients(): void {
       // הגדרת המתכון מהטופס
       const userCode: any = sessionStorage.getItem('password');
       const userCodeNumber = parseInt(userCode);
-      console.log("usercode---------", userCodeNumber);
 
       const newRecipe: Recipe = {
         recipeCode: this.recipeForm.value.recipeCode,
@@ -107,9 +104,8 @@ addIngredients(): void {
         ingredients: this.recipeForm.value.ingredients.filter((ingredient: string) => ingredient.trim() !== ''), // מסננים את הריקים
         preparationSteps: this.recipeForm.value.preparationSteps.filter((step: string) => step.trim() !== ''), // מסננים את הריקים
         userCode: userCodeNumber,
-        imageUrl: '../../../../1.jpg'
+        imageUrl: '../../../../assets/1.jpg'
       };
-       console.log("recipeCodeeeeeeeeee",newRecipe?.categoryCode);
       // ביצוע בקשת POST לשרת
       this.recipeService.setNewRecipe(newRecipe).subscribe(
         () => {

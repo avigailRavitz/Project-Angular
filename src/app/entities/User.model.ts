@@ -1,5 +1,5 @@
 export class User{
-    id!:Number
+    id!:number
     name!:string
     adress!:string
     email!:string

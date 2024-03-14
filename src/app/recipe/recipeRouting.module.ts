@@ -8,9 +8,10 @@ import { EditRecipeComponent } from "./component/edit-recipe/edit-recipe.compone
 const recipe_ROUTES:Route[]=[
     {path:'',redirectTo:'recipes',pathMatch:'full'},
     {path:'recipes',component:RecipesComponent},
+    {path:'editRecipe',component:EditRecipeComponent},
     {path:'addRecipe',component:AddRecipeComponent},
     {path:':id',component:DetailsComponent},
-    {path:'editRecipe',component:EditRecipeComponent}
+
     
   
 

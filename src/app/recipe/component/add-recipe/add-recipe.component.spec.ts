@@ -91,9 +91,6 @@ addIngredients(): void {
       // הגדרת המתכון מהטופס
       const userCode: any = sessionStorage.getItem('name');
       const userCodeNumber = parseInt(userCode);
-      console.log("addRecipe:");
-      console.log("usercode---", userCodeNumber);
-
       const newRecipe: Recipe = {
         recipeCode: 0,
         name: this.recipeForm.value.recipeName,

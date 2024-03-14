@@ -35,13 +35,12 @@ export class LoginComponent implements OnInit{
     })
   }
   onSubmit() {
-    console.log('onSubmit')
     const user = this.userList?.find(user => user.name === this.loginForm.value.userName);
     console.log("user",user)
     if (user) {
       if (user.password === this.loginForm.value.password) {
         // שמירת פרטי המשתמש ב-SessionStorage
-        sessionStorage.setItem('name', this.loginForm.value.username);
+        sessionStorage.setItem('name', this.loginForm.value.userName);
         sessionStorage.setItem('password', this.loginForm.value.password);
         // this.router.navigate(["/recipe"])
         //שליחה לקומפוננטה אחרת
@@ -71,8 +70,6 @@ export class LoginComponent implements OnInit{
 
       const navigationExtras: NavigationExtras = {
         queryParams: { username: this.loginForm.value.userName }};
-
-        console.log("userName",this.loginForm.value.userName)
       this.router.navigate(["user/register"],navigationExtras)
     }
 

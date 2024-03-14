@@ -17,8 +17,7 @@ export class UserService {
   }
 
   getUserById(id: number): Observable<User> {
-    console.log("@@@@@@@@@@@@@@@@@@@")
-    return this.http.get<User>(`${this.baseUrl}/User/${id}`)
+    return this.http.get<User>('https://localhost:7268/api/User/'+id)
   }
 
   addUser(user: User): Observable<User[]> {

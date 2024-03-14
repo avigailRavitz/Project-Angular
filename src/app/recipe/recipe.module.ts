@@ -13,18 +13,20 @@ import { MatIconModule} from '@angular/material/icon';
 // import { CategoryService } from '../../category.service';
 import {MatDividerModule} from '@angular/material/divider';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
-import { AddRecipeComponent } from './component/add-recipe/add-recipe.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { MatCheckboxModule } from '@angular/material/checkbox'
+import { EditRecipeComponent } from './component/edit-recipe/edit-recipe.component';
+import { AddRecipeComponent } from './component/add-recipe/add-recipe.component';
+
 
 
 
 @NgModule({
-  declarations: [RecipesComponent,SmallRecipeComponent,DetailsComponent,AddRecipeComponent],
+  declarations: [SmallRecipeComponent ,RecipesComponent,DetailsComponent,EditRecipeComponent,AddRecipeComponent],
   imports: [
 
     ReactiveFormsModule,
@@ -40,10 +42,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
     MatFormFieldModule,
     MatSelectModule,
     MatIconModule,
-  
     MatOptionModule,
-    MatCheckboxModule
-  ],
+    MatCheckboxModule,
+],
   exports:[RecipesComponent,recipeRoutingModele]
 })
 export class RecipeModule { }

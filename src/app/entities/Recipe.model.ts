@@ -1,5 +1,5 @@
 export class Recipe {
-    recipeCode?: Number
+    recipeCode?: number
     name?: String
     categoryCode?:Number
     preparationTimeInMinutes?:Number

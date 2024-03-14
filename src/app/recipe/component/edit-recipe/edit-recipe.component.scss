@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
+  margin-top: 4%;
+}
+
+.form-container {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.input-field {
+  font-size: 1.2rem; /* גודל הפונט */
+  padding: 15px; /* הרווח בין הטקסט לגבולות התיבה */
+  border-radius: 8px; /* פינות מעוגלות */
+  height: 200px; /* גובה האינפוט */
+}
+.bgImage{
+
+  
+      width: 10%;
+         width: 100vw; /* השתמשתי ב- vw במקום ב- % כדי לקבוע את הרוחב ביחס לרוחב של החלון ולא לעמודה */
+         height: 100vh; /* השתמשתי ב- vh במקום ב- % כדי לקבוע את הגובה ביחס לגובה של החלון ולא לעמודה */
+         background-size: cover;
+         background-position: center;
+         position: absolute; /* קביעת מיקום קבוע לתמונה */
+         top: 0;
+         left: 0;
+         opacity: 0.5; /* שקיפות של 50% - אפשר לשנות את הערך לפי המבוקש */
+         z-index: -1; /* שכבה אחורית מאחורי התוכן */
+     }

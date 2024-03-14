@@ -14,23 +14,19 @@ export class RecipteService {
     return this.http.get<Recipe[]>('https://localhost:7268/api/Recipe')}
 
     getRecipeById(id:number): Observable<Recipe> {
-
-      console.log("tryDelet",id)
       return this.http.get<Recipe>(`https://localhost:7268/api/Recipe/${id}`)}
 
   setNewRecipe(recipe: Recipe): Observable<Recipe[]> {
-    console.log("postttttttttttttttttttttttttttttttttttttttt")
-    console.log("recipe",recipe)
     return this.http.post<Recipe[]>('https://localhost:7268/api/Recipe',recipe);
     
   }
 
-
-  updateRecipe(recipe:Recipe,id:number): Observable<Recipe> {
-    return this.http.put(`https://localhost:7268/api/Recipe/${id}`,recipe)}
+  updateRecipe(recipe: Recipe): Observable<Recipe> {
+    console.log('update',recipe)
+    return this.http.put<Recipe>(`https://localhost:7268/api/Recipe/${recipe.recipeCode}`, recipe);
+  }
 
   deleteRecipe(id:number): Observable<void> {
-    console.log("deletRecipe",id)
     return this.http.delete<void>(`https://localhost:7268/api/User/${id}`);}
   
   }

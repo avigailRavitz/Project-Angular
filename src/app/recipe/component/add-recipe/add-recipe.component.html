@@ -68,7 +68,7 @@
                             <textarea matInput [formControlName]="i" placeholder="רכיב"></textarea>
                         </mat-form-field>
                         <button mat-icon-button (click)="removeIngredients(i)">
-                            <mat-icon>-</mat-icon>
+                            <mat-icon>delete</mat-icon>
                         </button>
                     </div>
                     <br>
@@ -77,7 +77,7 @@
 
                 <div formArrayName="preparationSteps" class="sub-form">
                     <mat-label>שלבי ההכנה</mat-label>
-                    <div *ngFor="let step of preparationStepsArray.value; let i = index">
+                    <div *ngFor="let step of preparationStepsArray.controls; let i = index">
                         <mat-form-field appearance="fill">
                             <textarea matInput [formControlName]="i" placeholder="שלב ההכנה"></textarea>
                         </mat-form-field>
@@ -89,8 +89,8 @@
                     <button mat-raised-button color="pink" type="button" (click)="addStep()">הוסף שלב הכנה</button>
                 </div>
 
-<!-- 
-                <div class="form-group">
+
+                <!-- <div class="form-group">
                     <mat-form-field appearance="fill">
                         <mat-label>נתיב התמונה</mat-label>
                         <input matInput type="text" formControlName="imageUrl">

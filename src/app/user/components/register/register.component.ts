@@ -44,11 +44,8 @@ ngOnInit():void{
 
 }
 register(){
-   
   let newUser=this.registerForm.value;
-  console.log(newUser)
    this.currentUser=this.userList?.find(user => user.name === this.registerForm.value.username && user.password === this.registerForm.value.password)
-   console.log()
    if(this.currentUser)
    Swal.fire({                       
     icon: 'success',
@@ -61,7 +58,6 @@ register(){
     this.userService.addUser(newUser).subscribe({
       next: (res) => {
         this.userList=res;
-        console.log('nextttttttttttt');
         this.router.navigate(['/recipes']);
         sessionStorage.setItem('name', newUser.name);
         sessionStorage.setItem('password', newUser.password);

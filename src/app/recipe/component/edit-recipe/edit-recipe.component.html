@@ -1,1 +1,47 @@
-<p>edit-recipe works!</p>
+
+<div class="all">
+  <div class="container">
+      <form [formGroup]="recipeForm" (ngSubmit)="saveChanges()" class="form-container">
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>שם המתכון</mat-label>
+          <input matInput formControlName="recipeName" class="input-field">
+        </mat-form-field>
+    
+        <div class="form-group">
+          <mat-form-field appearance="fill" class="full-width">
+              <mat-label>קטגוריה</mat-label>
+              <mat-select formControlName="categoryCode">
+                  <mat-option *ngFor="let category of categories" [value]="category.id">
+                    {{ category.name }}
+                    <mat-icon>{{ category.routingIcon }}</mat-icon>
+  
+                    
+                  </mat-option>
+                </mat-select>
+          </mat-form-field>
+      </div>
+    
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>זמן הכנה (בדקות)</mat-label>
+          <input matInput type="number" formControlName="preparationTimeInMinutes" class="input-field">
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>רמת קושי</mat-label>
+          <input matInput type="number" formControlName="difficultyLevel" class="input-field">
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>רכיבים (מופרדים בפסיק)</mat-label>
+          <textarea matInput formControlName="ingredients" class="input-field"></textarea>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill" class="full-width">
+          <mat-label>שלבי ההכנה (כל שלב בשורה נפרדת)</mat-label>
+          <textarea matInput formControlName="preparationSteps" class="input-field"></textarea>
+        </mat-form-field>
+    
+        <button mat-raised-button color="primary" type="submit">שמור שינויים</button>
+      </form>
+  </div>
+  </div>

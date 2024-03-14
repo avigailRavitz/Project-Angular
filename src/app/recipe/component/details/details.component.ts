@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeModule } from '../../recipe.module';
 import { RecipteService } from '../../recipte.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 import { UserService } from '../../../user/user.service';
 import { Recipe } from '../../../entities/Recipe.model';
 import { User } from '../../../entities/User.model';
@@ -22,8 +22,8 @@ categoryId?:Number| any
 userId?:Number| any
 category?:Category
 images?:string|any
-recipe!:Recipe
-user?:User
+recipe?:Recipe | any
+user?:User |any
 ingredients?: string[]|any
 preparationSteps?: string[]|any
 optionDelet?= false
@@ -31,15 +31,14 @@ optionDelet?= false
 
 
 
-  constructor(private _RecipeService:RecipteService,private rout:ActivatedRoute,private _categoryService:CategoryService,private _UserService:UserService) { }
+  constructor(private _RecipeService:RecipteService,private rout:ActivatedRoute,private _categoryService:CategoryService,private _UserService:UserService,private router:Router) { }
 
 
   ngOnInit(): void {
     this.recipeId=this.rout.snapshot.paramMap.get('id');
-
-    console.log("categoryyyyyyyyyyyyyy",this.category)
+    console.log("recipId",this.recipeId)
     this.initRecipe();
-    this.initUser();
+    // this.initUser();
   }
   initRecipe(){
     this._RecipeService.getRecipeById(this.recipeId).subscribe({
@@ -51,11 +50,8 @@ optionDelet?= false
         this.images = [this.recipe?.imageUrl, this.recipe?.imageUrl!];
         this.categoryId = this.recipe.categoryCode;
         this.userId = this.recipe.userCode;
-console.log('imageeeeeeeeeeeeeee',this.images)
-        console.log("recipe",this.recipe);
-        console.log("category",this.categoryId)
        this.initCategory();
-        // this.initUser();
+        this.initUser();
       },
       error: (err) => {
         console.log(err);
@@ -67,11 +63,9 @@ console.log('imageeeeeeeeeeeeeee',this.images)
   }
 
   initCategory() {
-    console.log("initCategory")
     this._categoryService.getCategoryById(this.categoryId).subscribe({
       next: (res) => {
         this.category = res;
-        console.log("this.category",this.category)
       },
       error: (err) => {
         console.log(err);
@@ -82,15 +76,13 @@ console.log('imageeeeeeeeeeeeeee',this.images)
     });
   }
   initUser(){
-    console.log("init/user")
-
     this._UserService.getUserById(this.userId).subscribe({
       next:(res)=>{
-        console.log("inittttttttttttttttttttttttttttttttttttttttttttttttttt")
+        console.log("details",res)
          this.user=res;
         if(this.user.password==sessionStorage.getItem('password')&&this.user.name==sessionStorage.getItem('name'))
         this.optionDelet=true;
-      
+      console.log("sucsses",this.optionDelet)
       },
       error:(err) =>{
         console.log(err);
@@ -99,13 +91,11 @@ console.log('imageeeeeeeeeeeeeee',this.images)
         console.log('finish initUser')
       }
     })
-    console.log("dlet",this.optionDelet)
   }
   del(){
     if(!this.optionDelet ){
     this._RecipeService.deleteRecipe(this.recipeId).subscribe({
 error:(error)=>{
-  console.log("")
   Swal.fire({
     title: 'המתכון לא נימחק',
     icon: 'error',
@@ -131,6 +121,16 @@ complete:()=>{
   }
     
   }
+  moveEdit( ){
+console.log("edit",this.optionDelet)
+if(this.optionDelet){
+  this.router.navigate(["recipes/editRecipe"],  {queryParams: { recipeCode: this.recipe.recipeCode }})
+    }
+}
+
+
+
+
 
 }
 

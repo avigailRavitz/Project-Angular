@@ -26,24 +26,25 @@
 						
 						<div class="preview-pic tab-content">
 							<img >
-						  <div class="tab-pane active" id="pic-1"><img [src]="recipe?.imageUrl" /></div>
-						  <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
-						  <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
-						  <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
-						  <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+						  <div class="tab-pane active" id="pic-1"><img [src]="recipe.imageUrl" /></div>
+						  <div class="tab-pane" id="pic-2"><img [src]="recipe.imageUrl" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="../../../../assets/2.jpg" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="../../../../assets/100145.jpg" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="../../../../assets/100145.jpg" /></div>
 						</div>
 						<ul class="preview-thumbnail nav nav-tabs">
-						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img [src]="recipe?.imageUrl" /></a></li>
-						  <li><a data-target="#pic-2" data-toggle="tab"><img [src]="recipe?.imageUrl" /></a></li>
-						  <li><a data-target="#pic-3" data-toggle="tab"><img [src]="recipe?.imageUrl" /></a></li>
-						  <li><a data-target="#pic-4" data-toggle="tab"><img [src]="recipe?.imageUrl" /></a></li>
-						  <li><a data-target="#pic-5" data-toggle="tab"><img [src]="recipe?.imageUrl" /></a></li>
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+						  <li><a data-target="#pic-5" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
 						</ul>
 						
 					</div>
 					<div class="details col-md-6">
-						<h3 class="product-title">{{recipe?.name}}</h3>
+						<h3 class="product-title">{{recipe.name}}</h3>
 						<h2>{{category?.name}}<i class="{{category?.routingIcon}}"></i><i class="ionicons ion-ios-trash"></i></h2>
+						<!-- <img class="food_image" [src]="category?.routingIcon"> -->
 						<img class="food_image" [src]="category?.routingIcon">
 						<!-- <img class="food_image" src="./details.component.jpg"> -->
                         <h3>difficulty level {{""|difficultyLevel:recipe.difficultyLevel}}</h3>
@@ -90,7 +91,7 @@
 									<mat-icon>favorite</mat-icon>
 								  </a>
 							  </div>
-							  
+							  <button (click)="moveEdit()">Edit</button>
 						</div>
 					</div>
 				</div>

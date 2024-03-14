@@ -13,8 +13,6 @@ export class CategoryService {
   getCategoryList(): Observable<Category[]> {
     return this.http.get<Category[]>('https://localhost:7268/api/Category')}
   getCategoryById(id:number): Observable<Category> {
-    console.log("getCategoryById")
-    console.log(id)
     return this.http.get<Category>(`https://localhost:7268/api/Category/${id}`)}
   setNewCategory(category: Category): Observable<Category> {
     return this.http.post<Category>('https://localhost:7268/api/Category', category);}

@@ -8,6 +8,5 @@ export const routes: Routes = [
     { path: 'user',  loadChildren: () => import('./user/user.module').then(c => c.UserModule) },
     {path:'home',component:HomeComponent},
     { path: 'recipes',loadChildren: ()=>import('./recipe/recipe.module').then(c=>c.RecipeModule)},
-    {path:'**' ,component:NotFoundComponent}
    
 ];
