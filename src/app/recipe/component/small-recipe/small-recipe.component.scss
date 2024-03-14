@@ -1,0 +1,257 @@
+// *,
+// *:before,
+// *:after {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-height: 100vh;
+//   font-family: "Karla", sans-serif;
+//   font-size: 100%;
+//   background-color: #f8f8f8;
+// }
+
+// h3 {
+//   margin-top: 0;
+//   margin-bottom: 0.25em;
+//   font-size: 1.25em;
+//   line-height: 1.1;
+// }
+// @media (min-width: 91em) {
+//   h3 {
+//     font-size: 1.5em;
+//   }
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// img,
+// figure {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// figure {
+//   margin: 0;
+// }
+
+// .grid-xlarge {
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+// @media (min-width: 54em) {
+//   .grid-xlarge {
+//     width: 95%;
+//   }
+// }
+// @media (min-width: 91em) {
+//   .grid-xlarge {
+//     width: 80%;
+//   }
+// }
+
+// .absolute-bg {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   z-index: 0;
+//   height: 100%;
+//   width: 100%;
+//   background-position: 50%;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   overflow: hidden;
+// }
+
+// .preloader {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   height: 3em;
+//   width: 3em;
+//   margin: auto;
+//   border: 2px solid transparent;
+//   border-top-color: #47bec7;
+//   border-radius: 50%;
+//   opacity: 1;
+//   -webkit-animation: spin 1s linear infinite both;
+//           animation: spin 1s linear infinite both;
+//   transition: opacity 2s 0.2s ease-out;
+// }
+
+// @-webkit-keyframes fade-in {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes fade-in {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+// @-webkit-keyframes spin {
+//   to {
+//     -webkit-transform: rotate(360deg);
+//             transform: rotate(360deg);
+//   }
+// }
+// @keyframes spin {
+//   to {
+//     -webkit-transform: rotate(360deg);
+//             transform: rotate(360deg);
+//   }
+// }
+// .team {
+//   width: 100%;
+//   padding-right: 1em;
+//   padding-left: 1em;
+// }
+// .team__container {
+//   display: flex;
+//   flex-direction: row;
+//   flex-flow: wrap;
+//   margin-left: -1em;
+//   margin-right: -1em;
+//   align-items: center;
+//   justify-content: center;
+// }
+// .team__container > * {
+//   padding: 1em;
+//   flex-basis: 100%;
+//   max-width: 100%;
+// }
+// @media (min-width: 32em) {
+//   .team__container > * {
+//     flex-basis: 50%;
+//     max-width: 50%;
+//   }
+// }
+// @media (min-width: 54em) {
+//   .team__container > * {
+//     flex-basis: 50%;
+//     max-width: 50%;
+//   }
+// }
+// @media (min-width: 65em) {
+//   .team__container > * {
+//     flex-basis: 33.3333333333%;
+//     max-width: 33.3333333333%;
+//   }
+// }
+// .team__link {
+//   position: relative;
+//   display: block;
+//   height: 100%;
+//   width: 100%;
+//   border: 1px solid transparent;
+//   background-clip: padding-box;
+//   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+//   -webkit-transform: translate3d(0, 0, 0);
+//           transform: translate3d(0, 0, 0);
+//   transition: all 1s ease;
+// }
+// .team__link:hover {
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   box-shadow: 0px 0px 47px rgba(0, 0, 0, 0.1);
+//   -webkit-transform: translate3d(0, -0.5em, 0);
+//           transform: translate3d(0, -0.5em, 0);
+// }
+// .team__link:hover:after {
+//   opacity: 1;
+// }
+// .team__link:hover .team__title:after {
+//   left: 0;
+//   width: 100%;
+// }
+// .team__link:after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 100%;
+//   background-clip: padding-box;
+//   box-shadow: 0 2px 50px rgba(0, 0, 0, 0.2);
+//   opacity: 0;
+//   transition: opacity 0.3s ease-in-out;
+// }
+// .team__header {
+//   margin-bottom: 2em;
+//   color: #47bec7;
+//   text-align: center;
+// }
+// .team__img-container {
+//   position: relative;
+//   background-color: #061c30;
+// }
+// .team__img {
+//   position: relative;
+//   padding-bottom: 100%;
+//   -webkit-animation: fade-in ease-in-out 1s both;
+//           animation: fade-in ease-in-out 1s both;
+// }
+// .team__text {
+//   padding: 1em 0.5em;
+//   color: #000;
+//   background-color: #fff;
+//   text-align: center;
+// }
+// @media (min-width: 32em) {
+//   .team__text {
+//     padding-top: 2em;
+//     padding-bottom: 2em;
+//   }
+// }
+// .team__title {
+//   position: relative;
+//   display: inline-block;
+//   /*
+//    * Add hover to pseudo element
+//    * left: 0;
+//    * width: 100%
+//    */
+//   margin-bottom: 0.35em;
+// }
+// .team__title:after {
+//   content: "";
+//   position: absolute;
+//   left: 50%;
+//   bottom: -0.1em;
+//   height: 2px;
+//   width: 0;
+//   background-color: #47bec7;
+//   transition: all 0.3s ease-in-out;
+// }
+// .team__position {
+//   display: block;
+//   font-size: 0.9em;
+// }
+.example-card {
+  max-width: 400px;
+  margin-bottom: 20px;
+  padding-bottom: 20px; /* הוספת padding תחתון */
+}
+
+.example-card:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0; /* אין padding תחתון אחרי הכרטיס האחרון */
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

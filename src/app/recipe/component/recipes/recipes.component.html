@@ -1,0 +1,13 @@
+<div class="home-container">
+<app-nav-bar></app-nav-bar>
+<div class="father" >
+    <div *ngFor="let recipe of RecipeList" >
+         <app-small-recipe  [recipe]="recipe" ></app-small-recipe>
+
+         <p></p>
+    </div>
+</div>
+</div>
+
+
+

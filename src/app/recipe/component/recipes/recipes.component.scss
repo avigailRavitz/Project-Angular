@@ -1,0 +1,27 @@
+.father {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  
+  .app-small-recipe {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  .home-container {
+    max-width: 100%; /* אנו מגדירים את הרוחב של התמונה להיות 100% של החלון */
+    height: 100vh; /* אנו מגדירים את הגובה של התמונה להיות גובה מלא של החלון */
+    background-image: url('../../../../assets/צילום-מתוקים-מלמעלה-הדגשת-צבע.jpg'); /* ניתן להחליף 'background-image.jpg' עם הנתיב לתמונת הרקע */
+    background-size: cover; /* מגדיר את גודל התמונה כך שתכסה את כל המסך */
+    background-position: center; /* ממריא את התמונה במרכז המסך */
+    background-attachment: fixed; /* מאפשר לתמונה להישאר במקום על גבי המסך בעת גלילת העמוד */
+  }
+  header {
+    background-color: rgba(225, 190, 190, 0.5); /* רקע בהיר חלקית עם שקיפות */
+    padding: 20px;
+  }
+  
