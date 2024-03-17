@@ -93,8 +93,11 @@ optionDelet?= false
     })
   }
   del(){
-    if(!this.optionDelet ){
+    console.log("this.optionDelettttttttttttt",this.optionDelet)
+    if(this.optionDelet ){
+     
     this._RecipeService.deleteRecipe(this.recipeId).subscribe({
+       
 error:(error)=>{
   Swal.fire({
     title: 'המתכון לא נימחק',

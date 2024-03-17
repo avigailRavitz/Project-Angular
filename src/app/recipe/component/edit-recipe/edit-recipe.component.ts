@@ -83,11 +83,23 @@ export class EditRecipeComponent  implements OnInit {
 
       this.recipeService.updateRecipe(this.recipe)
         .subscribe(() => {
-         prompt('Recipe updated successfully');
-        //  this.rout.navigate(['/recipes'])
+          Swal.fire({
+            title: 'המתכון עודכן בהצלחה!',
+            icon: 'success',
+            confirmButtonText: 'אישור'
+          }).then(() => {
+            this.rout.navigate(['/recipes'])
+          });
+       
         });
     } else {
-      prompt('Form is invalid');
+      Swal.fire({
+        title: 'שגיאה בעידכון המתכון',
+        icon:'error',
+        confirmButtonText: 'אישור'
+      }).then(() => {
+        this.rout.navigate(['/recipes'])
+      });
     }
   }
 }

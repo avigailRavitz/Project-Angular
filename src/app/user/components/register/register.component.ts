@@ -14,7 +14,7 @@ import { Console } from 'console';
 export class RegisterComponent implements OnInit{
 registerForm!:FormGroup
 userList!:User[]
-count:number=0
+count:number=5
 currentUser?:User
 constructor(private  router:Router,private formBuilder:FormBuilder,private route:ActivatedRoute,private userService:UserService) {}
 

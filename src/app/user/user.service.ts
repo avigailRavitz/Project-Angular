@@ -21,6 +21,7 @@ export class UserService {
   }
 
   addUser(user: User): Observable<User[]> {
+    console.log("addUser(user: User)",user)
     return this.http.post<User[]>('https://localhost:7268/api/User', user);
   }
 //   updateUser(user:User,id:number): Observable<User> {

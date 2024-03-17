@@ -48,6 +48,7 @@
 						<img class="food_image" [src]="category?.routingIcon">
 						<!-- <img class="food_image" src="./details.component.jpg"> -->
                         <h3>difficulty level {{""|difficultyLevel:recipe.difficultyLevel}}</h3>
+						<h3>Time preparation: {{recipe.preparationTimeInMinutes|duration}}</h3>
 						<div class="rating">
 							<!-- <div class="stars">
 								<span class="fa fa-star checked"></span>
