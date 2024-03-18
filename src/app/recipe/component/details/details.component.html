@@ -15,90 +15,92 @@
   </head>
 
 
-	<div>
-		<app-nav-bar></app-nav-bar>
-	<div class="container">
-		
-		<div class="card">
-			<div class="container-fliud">
-				<div class="wrapper row">
-					<div class="preview col-md-6">
-						
-						<div class="preview-pic tab-content">
-							<img >
-						  <div class="tab-pane active" id="pic-1"><img [src]="recipe.imageUrl" /></div>
-						  <div class="tab-pane" id="pic-2"><img [src]="recipe.imageUrl" /></div>
-						  <div class="tab-pane" id="pic-3"><img src="../../../../assets/2.jpg" /></div>
-						  <div class="tab-pane" id="pic-4"><img src="../../../../assets/100145.jpg" /></div>
-						  <div class="tab-pane" id="pic-5"><img src="../../../../assets/100145.jpg" /></div>
-						</div>
-						<ul class="preview-thumbnail nav nav-tabs">
-						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
-						  <li><a data-target="#pic-2" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
-						  <li><a data-target="#pic-3" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
-						  <li><a data-target="#pic-4" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
-						  <li><a data-target="#pic-5" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
-						</ul>
-						
-					</div>
-					<div class="details col-md-6">
-						<h3 class="product-title">{{recipe.name}}</h3>
-						<h2>{{category?.name}}<i class="{{category?.routingIcon}}"></i><i class="ionicons ion-ios-trash"></i></h2>
-						<!-- <img class="food_image" [src]="category?.routingIcon"> -->
-						<img class="food_image" [src]="category?.routingIcon">
-						<!-- <img class="food_image" src="./details.component.jpg"> -->
-                        <h3>difficulty level {{""|difficultyLevel:recipe.difficultyLevel}}</h3>
-						<h3>Time preparation: {{recipe.preparationTimeInMinutes|duration}}</h3>
-						<div class="rating">
-							<!-- <div class="stars">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
-							</div> -->
-						</div>
-						<div class="row">
-							<div class="col">
-							  <h2>Ingredients</h2>
-							  <ul class="list-group">
-								<div class="list-group-item" *ngFor="let ingredient of ingredients">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
-										<path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-										<path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-									  </svg> 
-									  {{ ingredient }}</div>
-									
-							  </ul>
-							</div>
-							<div class="col">
-							  <h2>Instructions</h2>
-							  <ol class="list-group l">
-								<li class="list-group-item" *ngFor="let instruction of preparationSteps">
-									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-arrow" viewBox="0 0 16 16">
-										<path d="M6.707 9h4.364c-.536 1.573 2.028 3.806 4.929-.5-2.9-4.306-5.465-2.073-4.929-.5H6.707L4.854 6.146a.5.5 0 1 0-.708.708L5.293 8h-.586L2.854 6.146a.5.5 0 1 0-.708.708L3.293 8h-.586L.854 6.146a.5.5 0 1 0-.708.708L1.793 8.5.146 10.146a.5.5 0 0 0 .708.708L2.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708L4.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708z"/>
-									  </svg>
-									 {{ instruction }}
-								</li>
-							  </ol>
-							</div>
-						  </div>
-						<div class="action">
-							<div class="example-button-container">
-								<button (click)="del()" mat-fab color="primary" aria-label="Example icon button with a delete icon">
-								  <mat-icon>delete</mat-icon>
-								</button>
-								<a mat-fab matTooltip="Link" routerLink="." aria-label="Example fab with a heart icon">
-									<mat-icon>favorite</mat-icon>
-								  </a>
-							  </div>
-							  <button (click)="moveEdit()">Edit</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div>
+        <app-nav-bar></app-nav-bar>
+    <div class="container">
+        
+        <div class="card">
+            <div class="container-fliud">
+                <div class="wrapper row">
+                    <div class="preview col-md-6">
+                        
+                        <div class="preview-pic tab-content">
+                            <img >
+                          <div class="tab-pane active" id="pic-1"><img [src]="recipe.imageUrl" /></div>
+                          <div class="tab-pane" id="pic-2"><img [src]="recipe.imageUrl" /></div>
+                          <div class="tab-pane" id="pic-3"><img src="../../../../assets/2.jpg" /></div>
+                          <div class="tab-pane" id="pic-4"><img src="../../../../assets/100145.jpg" /></div>
+                          <div class="tab-pane" id="pic-5"><img src="../../../../assets/100145.jpg" /></div>
+                        </div>
+                        <ul class="preview-thumbnail nav nav-tabs">
+                          <li class="active"><a data-target="#pic-1" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+                          <li><a data-target="#pic-2" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+                          <li><a data-target="#pic-3" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+                          <li><a data-target="#pic-4" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+                          <li><a data-target="#pic-5" data-toggle="tab"><img [src]="recipe.imageUrl" /></a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="details col-md-6">
+                        <h3 class="product-title">{{recipe.name}}</h3>
+                        <h2>{{category?.name}}<i class="{{category?.routingIcon}}"></i><i class="ionicons ion-ios-trash"></i></h2>
+                        <!-- <img class="food_image" [src]="category?.routingIcon"> -->
+                        <img class="food_image" [src]="category?.routingIcon">
+                        <!-- <img class="food_image" src="./details.component.jpg"> -->
+                        <h3>difficulty level: {{""|difficultyLevel:recipe.difficultyLevel}}</h3>
+                        <h3>Time preparation: {{recipe.preparationTimeInMinutes|duration}}</h3>
+                        <div class="rating">
+                            <!-- <div class="stars">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                              <h2>Ingredients</h2>
+                              <ul class="list-group">
+                                <div class="list-group-item" *ngFor="let ingredient of ingredients">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                                      </svg> 
+                                      {{ ingredient }}</div>
+                                    
+                              </ul>
+                            </div>
+                            <div class="col">
+                              <h2>Instructions</h2>
+                              <ol class="list-group l">
+                                <li class="list-group-item" *ngFor="let instruction of preparationSteps">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-arrow" viewBox="0 0 16 16">
+                                        <path d="M6.707 9h4.364c-.536 1.573 2.028 3.806 4.929-.5-2.9-4.306-5.465-2.073-4.929-.5H6.707L4.854 6.146a.5.5 0 1 0-.708.708L5.293 8h-.586L2.854 6.146a.5.5 0 1 0-.708.708L3.293 8h-.586L.854 6.146a.5.5 0 1 0-.708.708L1.793 8.5.146 10.146a.5.5 0 0 0 .708.708L2.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708L4.707 9h.586l-1.147 1.146a.5.5 0 0 0 .708.708z"/>
+                                      </svg>
+                                     {{ instruction }}
+                                </li>
+                              </ol>
+                            </div>
+                          </div>
+                        <div class="action">
+                            <div class="example-button-container">
+                                <button (click)="del()" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                                  <mat-icon>delete</mat-icon>
+                                </button>
+                                <a mat-fab matTooltip="Link" routerLink="." aria-label="Example fab with a heart icon">
+                                    <mat-icon>favorite</mat-icon>
+                                  </a>
+                              </div>
+							
+                              <button (click)="moveEdit()">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	</div>
+    </div>
+
 

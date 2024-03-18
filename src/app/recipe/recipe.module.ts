@@ -21,7 +21,8 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatCheckboxModule } from '@angular/material/checkbox'
 import { EditRecipeComponent } from './component/edit-recipe/edit-recipe.component';
 import { AddRecipeComponent } from './component/add-recipe/add-recipe.component';
-
+import { DurationPipe } from '../during.pipe';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 
@@ -44,6 +45,9 @@ import { AddRecipeComponent } from './component/add-recipe/add-recipe.component'
     MatIconModule,
     MatOptionModule,
     MatCheckboxModule,
+    DurationPipe,
+    MatSidenavModule,
+    MatButtonModule
 ],
   exports:[RecipesComponent,recipeRoutingModele]
 })

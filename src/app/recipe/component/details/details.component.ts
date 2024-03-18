@@ -5,9 +5,9 @@ import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
 import { UserService } from '../../../user/user.service';
 import { Recipe } from '../../../entities/Recipe.model';
 import { User } from '../../../entities/User.model';
-import { error, log } from 'console';
 import { Category } from '../../../entities/Category.model';
 import { CategoryService } from '../../../../category.service';
+// import { DurationPipe } from '../../../duration.pipe';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -31,26 +31,34 @@ optionDelet?= false
 
 
 
-  constructor(private _RecipeService:RecipteService,private rout:ActivatedRoute,private _categoryService:CategoryService,private _UserService:UserService,private router:Router) { }
+  constructor(private _RecipeService:RecipteService,
+    private rout:ActivatedRoute,
+    private _categoryService:CategoryService,
+    private _UserService:UserService,
+    private router:Router,) { }
 
 
   ngOnInit(): void {
     this.recipeId=this.rout.snapshot.paramMap.get('id');
-    console.log("recipId",this.recipeId)
+    console.log("recipIdddddddd",this.recipeId)
     this.initRecipe();
     // this.initUser();
+   
   }
   initRecipe(){
+    console.log("initRecipe")
     this._RecipeService.getRecipeById(this.recipeId).subscribe({
       next:(res)=>{
-        this.recipe=res;
+        console.log("next")
         this.recipe = res;
         this.ingredients = this.recipe?.ingredients;
         this.preparationSteps = this.recipe?.preparationSteps;
         this.images = [this.recipe?.imageUrl, this.recipe?.imageUrl!];
         this.categoryId = this.recipe.categoryCode;
+        console.log("next")
         this.userId = this.recipe.userCode;
-       this.initCategory();
+        console.log("Details -userId",this.userId)
+        this.initCategory();
         this.initUser();
       },
       error: (err) => {
@@ -93,27 +101,27 @@ optionDelet?= false
     })
   }
   del(){
-    console.log("this.optionDelettttttttttttt",this.optionDelet)
     if(this.optionDelet ){
-     
-    this._RecipeService.deleteRecipe(this.recipeId).subscribe({
-       
-error:(error)=>{
-  Swal.fire({
-    title: 'המתכון לא נימחק',
-    icon: 'error',
-    confirmButtonText: 'אישור'
-  })
-},
-complete:()=>{
-  Swal.fire({
-    title: 'המתכון נמחק בהצלחה!',
-    icon: 'success',
-    confirmButtonText: 'אישור'
-  })
-}
-   
-    })
+      console.log("recipeCode",this.recipe.recipeCode)
+    this._RecipeService.deleteRecipe(this.recipe.recipeCode).subscribe({
+      next: () => {
+        Swal.fire(
+          'נמחק!',
+          'המתכון נמחק בהצלחה.',
+          'success'
+        );
+        // הפניה לרשימת המתכונים
+        this.router.navigate(['/recipes']);
+      },
+      error: (err) => {
+        console.log(err);
+        Swal.fire(
+          'שגיאה!',
+          'אירעה שגיאה במחיקת המתכון.',
+          'error'
+        );
+      }
+    });
   }
   else{
     Swal.fire({
@@ -136,5 +144,3 @@ if(this.optionDelet){
 
 
 }
-
-

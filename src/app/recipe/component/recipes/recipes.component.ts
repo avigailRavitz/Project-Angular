@@ -1,9 +1,6 @@
 import { Recipe } from '../../../entities/Recipe.model';
 import { Component, OnInit } from '@angular/core';
-
 import { RecipteService } from '../../recipte.service';
-import { recipeRoutingModele } from '../../recipeRouting.module';
-import { RecipeModule } from '../../recipe.module';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,14 +9,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./recipes.component.scss']
 })
 export class RecipesComponent implements OnInit {
-  RecipeList?:Recipe[] ;
+  RecipeList?: Recipe[];
+  filteredRecipes: Recipe[] = [];
+  filterByName: string = '';
 
   constructor(private router: Router, private _RecipeService: RecipteService) { }
 
   ngOnInit(): void {
     this._RecipeService.getRecipeList().subscribe({
       next: (res) => {
-        this.RecipeList = res
+        this.RecipeList = res;
+        this.filterRecipes(); // Filter initially
       },
       error: (err) => {
         console.log(err)
@@ -30,4 +30,15 @@ export class RecipesComponent implements OnInit {
     })
   }
 
+  filterRecipes(): void {
+    if (!this.RecipeList) return;
+    this.filteredRecipes = this.RecipeList.filter(recipe =>
+      recipe.name?.toLowerCase().startsWith(this.filterByName.toLowerCase())
+    );
+  }
+
+  onInputChange(event: Event): void {
+    this.filterByName = (event.target as HTMLInputElement).value;
+    this.filterRecipes();
+  }
 }

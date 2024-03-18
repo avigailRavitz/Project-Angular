@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Recipe } from '../../../entities/Recipe.model';
 import { Router } from '@angular/router';
 import { recipeRoutingModele } from '../../recipeRouting.module';
-
+import { DurationPipe } from '../../../during.pipe';
 @Component({
   selector: 'app-small-recipe',
   templateUrl: './small-recipe.component.html',

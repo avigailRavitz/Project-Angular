@@ -4,8 +4,15 @@
   position: relative;
   width: 36px;
   font-size: 24px;
+  
 }
-
+.navbar {
+  position: fixed; /* קבע את התפריט במקום */
+  top: 0; /* מקום עליון */
+  left: 0; /* מקום שמאלי */
+  width: 100%; /* רוחב מלא */
+  z-index: 9999; /* קבע את המעמד של התפריט להיות הכי גבוה */
+}
 .navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
   font-size: 0.75rem;
   position: absolute;

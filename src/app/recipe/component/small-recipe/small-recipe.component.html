@@ -7,9 +7,9 @@
   </mat-card-header>
   <img mat-card-image [src]="recipe?.imageUrl" alt="Photo of a Shiba Inu">
   <mat-card-content>
-    <p>
-   {{recipe?.preparationSteps}}
-    </p>
+    <h3>רמת קושי: {{""|difficultyLevel:recipe?.difficultyLevel}}</h3>
+    <!-- <h3>זמן הכנה: {{recipe.preparationTimeInMinutes|duration}}</h3> -->
+ <!-- <h3>זמן הכנה: {{recipe?.preparationTime|}}</h3> -->
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>

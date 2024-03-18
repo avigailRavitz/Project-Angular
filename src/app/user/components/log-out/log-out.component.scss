@@ -1,0 +1,28 @@
+.logout-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../../assets/צילום-מתוקים-מלמעלה-הדגשת-צבע.jpg'); /* תחליף את 'your-background-image.jpg' בנתיב לתמונת הרקע שלך */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .logout-content {
+    background-color: rgba(0, 0, 0, 0.8); /* רקע שקוף לתוך הקונטנר כדי להבהיר את הטקסט */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3em; /* גודל כותרת */
+    margin-bottom: 20px; /* מרווח מתחת לכותרת */
+    color: #ffffff; /* צבע טקסט כותרת */
+  }
+  
+  p {
+    font-size: 1.5em; /* גודל טקסט */
+    color: #ffffff; /* צבע טקסט */
+  }
+  

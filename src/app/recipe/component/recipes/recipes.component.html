@@ -1,13 +1,13 @@
-<div class="home-container">
 <app-nav-bar></app-nav-bar>
-<div class="father" >
-    <div *ngFor="let recipe of RecipeList" >
-         <app-small-recipe  [recipe]="recipe" ></app-small-recipe>
+<div class="home-container">
 
-         <p></p>
+    <input ltype="text" (input)="onInputChange($event)" placeholder="Filter by Recipe Name">
+    <div class="father">
+        <div *ngFor="let recipe of filteredRecipes">
+            <app-small-recipe [recipe]="recipe"></app-small-recipe>
+            <p></p>
+        </div>
     </div>
 </div>
-</div>
-
 
 
