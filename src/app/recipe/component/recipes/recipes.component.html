@@ -1,13 +1,114 @@
-<app-nav-bar></app-nav-bar>
-<div class="home-container">
+<!-- <app-nav-bar></app-nav-bar>
+<div class="d-flex">
+  <div position="right" class="side p-2 flex-shrink-1">
 
-    <input ltype="text" (input)="onInputChange($event)" placeholder="Filter by Recipe Name">
-    <div class="father">
-        <div *ngFor="let recipe of filteredRecipes">
-            <app-small-recipe [recipe]="recipe"></app-small-recipe>
-            <p></p>
+    <div class="h-filter1">
+      <div class="custom-input">
+        <div class="input-group">
+          <input class="input" type="text" (input)="onInputChange($event)" placeholder="Filter by Recipe Name">
+          <button class="btn btn-outline-secondary" type="button" (click)="filterAll()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg></button>
         </div>
+      </div>
+      <h2>choose categories :</h2>
+      <section class="categories-section">
+        <h4 class="h-filter">בחר קטגוריה</h4>
+        <div *ngFor="let category of categoryList">
+          <mat-checkbox (change)="filterCategory(category.id)" [color]="'warn'">
+            <i class="material-icons">{{ category.routingIcon }}</i> {{category?.name}}    
+          </mat-checkbox>
+        </div>
+      </section>
     </div>
+    
+  </div>
+    <div class="card-container two p-2 w-100">
+      <div *ngFor="let recipe of filteredRecipes">
+        <app-small-recipe id="son" [recipe]="recipe"></app-small-recipe>
+      </div>
+  </div>
 </div>
 
 
+
+
+
+ -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<app-nav-bar></app-nav-bar>
+<div id="wrapper" class="toggled">
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+      <li>
+        <div class="input-group">
+          <input class="input" type="text" (input)="onInputChange($event)" placeholder="Search Recipe">
+          <button class="btn btn-outline-secondary" type="button" (click)="filterAll()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg></button>
+        </div>
+        <h2>choose categories :</h2>
+        <!-- <section class="categories-section">
+          <div *ngFor="let category of categoryList">
+            <mat-checkbox (change)="filterCategory(category.id)" [color]="'warn'">
+              <i class="material-icons">{{ category.routingIcon }}</i> {{category?.name}}
+            </mat-checkbox>
+          </div>
+        </section> -->
+        <section class="categories-section">
+          <div *ngFor="let category of categoryList">
+            <mat-checkbox (change)="filterCategory(category.id)" [color]="'warn'">
+              <img src="{{ category.routingIcon }}" alt="{{ category.name }}" class="rounded-image">
+              {{ category.name }}
+            </mat-checkbox>
+          </div>
+        </section>
+        
+        
+      </li>
+    </ul>
+  </div> <!-- /#sidebar-wrapper -->
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="card-container two p-2 w-100">
+        <div *ngFor="let recipe of filteredRecipes">
+          <app-small-recipe id="son" [recipe]="recipe"></app-small-recipe>
+        </div>
+      </div>
+    </div>
+  </div> <!-- /#page-content-wrapper -->
+</div> <!-- /#wrapper -->
+<!-- Bootstrap core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+<script>
+  $(function () {
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+
+    $(window).resize(function (e) {
+      if ($(window).width() <= 768) {
+        $("#wrapper").removeClass("toggled");
+      } else {
+        $("#wrapper").addClass("toggled");
+      }
+    });
+  });
+
+</script>

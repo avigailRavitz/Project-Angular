@@ -1,13 +1,14 @@
 export class Recipe {
+    
     recipeCode?: number
-    name?: String
-    categoryCode?:Number
-    preparationTimeInMinutes?:Number
-    difficultyLevel?:Number
+    name?: string
+    categoryCode?:number
+    preparationTimeInMinutes?:number
+    difficultyLevel?:number
     dateAdded?:Date
-    ingredients?:String[]
-    preparationSteps?:String[]
-    userCode?:Number
-    imageUrl?: String
+    ingredients?:string[]
+    preparationSteps?:string[]
+    userCode?:number
+    imageUrl?: string
 }
 

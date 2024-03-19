@@ -1,39 +1,23 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Style the container */
-  .home-container {
-    max-width: 100%; /* אנו מגדירים את הרוחב של התמונה להיות 100% של החלון */
-    height: 100vh; /* אנו מגדירים את הגובה של התמונה להיות גובה מלא של החלון */
-    background-image: url('../../assets/צילום-מתוקים-מלמעלה-הדגשת-צבע.jpg'); /* ניתן להחליף 'background-image.jpg' עם הנתיב לתמונת הרקע */
-    background-size: cover; /* מגדיר את גודל התמונה כך שתכסה את כל המסך */
-    background-position: center; /* ממריא את התמונה במרכז המסך */
-    background-attachment: fixed; /* מאפשר לתמונה להישאר במקום על גבי המסך בעת גלילת העמוד */
-    color: white; /* צבע הטקסט יהיה לבן על רקע כהה */
-  }
-  
-  /* Style the header */
-  header {
-    background-color: rgba(0, 0, 0, 0.5); /* אפשרות: רקע כהה חלקית כדי להבטיח קריאות של הטקסט */
-    color: white;
-    padding: 20px;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-  }
-  
-  /* Style the main content */
-  main {
-    padding: 20px;
-  }
-  
-  main p {
-    font-size: 1.2em;
-    line-height: 1.6;
-  }
-  
+/* styles.css */
+
+.home-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // background-image: url('../../assets/wel.jpg'); /* URL לתמונת הרקע */
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed; /* מאפשר לתמונה להישאר במקום על גבי המסך בעת גלילת העמוד */
+  height: 100vh;
+}
+
+#idd {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/lo.jpg');
+  background-size: cover;
+  background-position: center;
+}

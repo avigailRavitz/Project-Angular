@@ -240,8 +240,12 @@
 //   display: block;
 //   font-size: 0.9em;
 // }
+.img{
+   width: auto; /* גודל התמונה יתאם אוטומטית לרוחב */
+  height: 200px; /* קביעת גובה קבוע לתמונה */
+}
 .example-card {
-  max-width: 400px;
+  width: 320px;
   margin-bottom: 20px;
   padding-bottom: 20px; /* הוספת padding תחתון */
 }

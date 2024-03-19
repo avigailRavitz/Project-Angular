@@ -2,6 +2,7 @@
 .mat-form-container {
     max-width: 400px;
     margin: 0 auto;
+ 
   }
   
   mat-form-field {
@@ -75,13 +76,19 @@
     margin-top: 20px;
   }
   .all{
-    background-image: url('../../../../assets/צילום-מתוקים-מלמעלה-הדגשת-צבע.jpg');
+    margin-top: 110px;
+    background-image: url('../../../../assets/רקע.webp');
     background-size: cover; /* כדי להתאים את התמונה לגודל של החלון */
     background-attachment: fixed; /* כדי להשאיר את התמונה במקום כאשר ממסך נגללים */
     background-position: center center; /* כדי למקד את התמונה באמצע הדף */
     background-repeat: no-repeat; /* כדי לא לשקול את התמונה */
     margin-top: 6%;
   }
+  .small-image {
+    width: 1cm; /* 1 ס"מ */
+    height: 1cm; /* 1 ס"מ */
+  }
+  
   
   
   .rotating-icon-container {

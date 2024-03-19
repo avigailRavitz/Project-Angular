@@ -6,12 +6,23 @@
   font-size: 24px;
   
 }
+.navbar-custom {
+  background-color: #9b6b4b !important;
+}
 .navbar {
   position: fixed; /* קבע את התפריט במקום */
   top: 0; /* מקום עליון */
   left: 0; /* מקום שמאלי */
   width: 100%; /* רוחב מלא */
   z-index: 9999; /* קבע את המעמד של התפריט להיות הכי גבוה */
+}
+.navbar-brand-logo {
+  width: 130px; /* גודל התמונה */
+  height: 95Px;
+  // margin-right: 5px; /* הידוק ימני */
+}
+.nav-link-search {
+  font-size: 20px; /* גודל הכתב */
 }
 .navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
   font-size: 0.75rem;
