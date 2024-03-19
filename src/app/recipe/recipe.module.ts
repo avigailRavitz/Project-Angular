@@ -27,7 +27,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @NgModule({
-  declarations: [SmallRecipeComponent ,RecipesComponent,DetailsComponent,EditRecipeComponent,AddRecipeComponent],
+  declarations: [SmallRecipeComponent ,RecipesComponent,DetailsComponent,EditRecipeComponent,AddRecipeComponent,DurationPipe],
   imports: [
 
     ReactiveFormsModule,
@@ -45,7 +45,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatIconModule,
     MatOptionModule,
     MatCheckboxModule,
-    DurationPipe,
+    
     MatSidenavModule,
     MatButtonModule
 ],

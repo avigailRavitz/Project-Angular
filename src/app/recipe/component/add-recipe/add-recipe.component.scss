@@ -1,4 +1,10 @@
 /* add-recipe.component.css */
+.rounded-image {
+  border-radius: 50%;
+  width: 1.5cm; /* 2 ס"מ */
+  height: 1.5cm; /* 2 ס"מ */
+}
+
 .mat-form-container {
     max-width: 400px;
     margin: 0 auto;

@@ -1,4 +1,3 @@
-	
 <div *ngIf="!showRotatingIcon">
     <div class="all">
         <app-nav-bar></app-nav-bar>
@@ -24,7 +23,7 @@
                         <mat-select formControlName="categoryCode">
                             <mat-option *ngFor="let category of categories" value={{category.id}}>
                                 {{ category?.name }}
-                                <mat-icon>{{ category?.routingIcon }}</mat-icon>
+                                <img src="{{ category.routingIcon }}" alt="{{ category.name }}" class="rounded-image">
                             </mat-option>
                         </mat-select>
                     </mat-form-field>
@@ -72,7 +71,8 @@
                         </button>
                     </div>
                     <br>
-                    <button mat-raised-button color="pink" type="button" (click)="addIngredients()"><img src="../../../../assets/plus.png" class="small-image" /></button>
+                    <button mat-raised-button color="pink" type="button" (click)="addIngredients()"><img
+                            src="../../../../assets/plus.png" class="small-image" /></button>
                 </div>
 
                 <div formArrayName="preparationSteps" class="sub-form">
@@ -88,15 +88,16 @@
                     <br>
                     <button mat-raised-button color="pink" type="button" (click)="addStep()">
                         <img src="../../../../assets/plus.png" class="small-image" />
-                      </button>
-                      
+                    </button>
+
                 </div>
+
 
 
                 <div class="form-group">
                     <mat-form-field appearance="fill">
                         <mat-label>נתיב התמונה</mat-label>
-                        <input matInput type="text" formControlName="imageUrl">
+                        <input matInput type="text" [value]="'../../../../assets/5.jpg'" formControlName="imageUrl">
                     </mat-form-field>
                 </div>
 

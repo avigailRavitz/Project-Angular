@@ -14,7 +14,6 @@ import { Console } from 'console';
 export class RegisterComponent implements OnInit{
 registerForm!:FormGroup
 userList!:User[]
-count:number=5
 currentUser?:User
 constructor(private  router:Router,private formBuilder:FormBuilder,private route:ActivatedRoute,private userService:UserService) {}
 
@@ -35,7 +34,7 @@ ngOnInit():void{
 });
   const name=this.route.snapshot.queryParamMap.get("username");
   this.registerForm=this.formBuilder.group({
-    id:[this.count+1],
+    id:[-1],
     name:[name||'',[Validators.required,Validators.minLength(3)]],
     address:['',[Validators.required,Validators.minLength(3)]],
     email:['',[Validators.required,Validators.email]],
@@ -52,6 +51,7 @@ register(){
     title: '!משתמש קיים',
     text: 'משתמש קיים במערכת.'
   });
+
   else{
     // const newUser = { ...this.registerForm.value, id: this.count };
      this.currentUser==newUser;

@@ -72,7 +72,7 @@ this.userrrr();
       ingredients: this.formBuilder.array([]),
       preparationSteps: this.formBuilder.array([]),
       userCode: ['0', Validators.required],
-      imageRoute: ['../../../../assets/2.jpg', Validators.required]
+      imageUrl: [ "../../../../assets/5.jpg"]
     });
   }
   loadCategories(): void {
@@ -135,7 +135,7 @@ if (user) {
         preparationSteps: this.recipeForm.value.preparationSteps.filter((step: string) => step.trim() !== ''), // מסננים את הריקים
         userCode: user?.id,
         
-        imageUrl: '../../../../assets/1.jpg'
+        imageUrl: this.recipeForm.value.imageUrl
         
       };
       // console.log("userrrrrrrrrrrrrrrrrrrrrrr",userCodeNumber)

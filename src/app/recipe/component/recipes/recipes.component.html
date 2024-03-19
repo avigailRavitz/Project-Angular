@@ -76,8 +76,15 @@
             </mat-checkbox>
           </div>
         </section>
-        
-        
+        <div class="form-group">
+          <mat-form-field appearance="fill">
+            <mat-label>Difficulty Level Filter</mat-label>
+            <!-- <mat-icon matPrefix>stars</mat-icon> -->
+            <input matInput type="number" [(ngModel)]="difficultyLevel" (input)="filterAll()" placeholder="Enter Difficulty Level">
+          </mat-form-field>
+        </div>
+
+
       </li>
     </ul>
   </div> <!-- /#sidebar-wrapper -->

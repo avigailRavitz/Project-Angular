@@ -48,13 +48,13 @@ export class RecipesComponent implements OnInit {
   }
   filterAll(): void {
     this.filteredRecipes = this.recipeList.filter(recipe => {
-      const time = this.preparationTime === 0 || (recipe.preparationTimeInMinutes !== undefined && recipe.preparationTimeInMinutes <= this.preparationTime);
-      const difficulty = this.difficultyLevel === 0 || (recipe.difficultyLevel !== undefined && recipe.difficultyLevel <= this.difficultyLevel);
-      const category = this.selectedCategories.length === 0 || (recipe.categoryCode !== undefined && this.selectedCategories.includes(recipe.categoryCode));
-      const name = this.filterByName === '' || (recipe.name !== undefined && recipe.name.toLowerCase().includes(this.filterByName.toLowerCase()));
-      return time && difficulty && category && name;
+        const time = this.preparationTime === 0 || (recipe.preparationTimeInMinutes !== undefined && recipe.preparationTimeInMinutes <= this.preparationTime);
+        const difficulty = this.difficultyLevel === 0 || (recipe.difficultyLevel !== undefined && recipe.difficultyLevel <= this.difficultyLevel);
+        const category = this.selectedCategories.length === 0 || (recipe.categoryCode !== undefined && this.selectedCategories.includes(recipe.categoryCode));
+        const name = this.filterByName === '' || (recipe.name !== undefined && recipe.name.toLowerCase().includes(this.filterByName.toLowerCase()));
+        return time && difficulty && category && name;
     });
-  }
+}
  
   filterCategory(category: number|any): void {
     const index = this.selectedCategories.indexOf(category);

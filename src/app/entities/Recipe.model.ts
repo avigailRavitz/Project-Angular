@@ -3,7 +3,7 @@ export class Recipe {
     recipeCode?: number
     name?: string
     categoryCode?:number
-    preparationTimeInMinutes?:number
+    preparationTimeInMinutes!:number
     difficultyLevel?:number
     dateAdded?:Date
     ingredients?:string[]

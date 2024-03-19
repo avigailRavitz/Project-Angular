@@ -84,17 +84,21 @@
                             </div>
                           </div>
                         <div class="action">
-                            <div class="example-button-container">
-                                <button (click)="del()" mat-fab color="primary" aria-label="Example icon button with a delete icon">
-                                  <mat-icon>delete</mat-icon>
-                                </button>
-                                <a mat-fab matTooltip="Link" routerLink="." aria-label="Example fab with a heart icon">
-                                    <mat-icon>favorite</mat-icon>
-                                  </a>
-                              </div>
+                           
 							
-                              <button (click)="moveEdit()">Edit</button>
                         </div>
+                        
+                        
+                    </div >
+                    <div class="example-button-container">
+
+                      <button *ngIf="optionDelet" (click)="moveEdit()">Edit</button>
+                      <button *ngIf="optionDelet" (click)="del()" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+                        <mat-icon>delete</mat-icon>
+                      </button>
+                      <a mat-fab matTooltip="Link" routerLink="." aria-label="Example fab with a heart icon">
+                          <mat-icon>favorite</mat-icon>
+                        </a>
                     </div>
                 </div>
             </div>
