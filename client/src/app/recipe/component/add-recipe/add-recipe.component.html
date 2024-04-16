@@ -1,0 +1,114 @@
+<div *ngIf="!showRotatingIcon">
+    <div class="all">
+        <app-nav-bar></app-nav-bar>
+        <div class="container">
+            <h2 class="title">Add New Recipe</h2>
+            <form [formGroup]="recipeForm" (ngSubmit)="addRecipe()" class="form">
+                <div class="form-group">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Recipe Name</mat-label>
+                        <input matInput formControlName="recipeName">
+                    </mat-form-field>
+                </div>
+
+                <div class="form-group">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Recipe Code</mat-label>
+                        <input type="number" matInput formControlName="recipeCode">
+                    </mat-form-field>
+                </div>
+                <div class="form-group">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Category</mat-label>
+                        <mat-select formControlName="categoryCode">
+                            <mat-option *ngFor="let category of categories" [value]="category.id">
+                                {{ category?.name }}
+                                <img src="{{ category.routingIcon }}" alt="{{ category.name }}" class="rounded-image">
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+                <div class="form-group">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Preparation Time (minutes)</mat-label>
+                        <input matInput type="number" formControlName="preparationTime">
+                    </mat-form-field>
+                </div>
+
+                <div class="form-group">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Difficulty</mat-label>
+                        <mat-select formControlName="difficultyLevel">
+                            <mat-option value="1">
+                                <mat-icon>thumb_up</mat-icon> Easy
+                            </mat-option>
+                            <mat-option value="2">
+                                <mat-icon>remove_red_eye</mat-icon> Medium
+                            </mat-option>
+                            <mat-option value="3">
+                                <mat-icon>build</mat-icon> Complex
+                            </mat-option>
+                            <mat-option value="4">
+                                <mat-icon>flare</mat-icon> Challenging
+                            </mat-option>
+                            <mat-option value="5">
+                                <mat-icon>whatshot</mat-icon> Very Hard
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+
+                <div formArrayName="ingredients" class="sub-form">
+                    <mat-label>Ingredients</mat-label>
+                    <div *ngFor="let step of ingredients.controls; let i = index">
+                        <mat-form-field appearance="fill">
+                            <textarea matInput [formControlName]="i" placeholder="Ingredient"></textarea>
+                        </mat-form-field>
+                        <button mat-icon-button (click)="removeIngredients(i)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                    <br>
+                    <button mat-raised-button color="pink" type="button" (click)="addIngredients()"><img
+                            src="../../../../assets/plus.png" class="small-image" /></button>
+                </div>
+
+                <div formArrayName="preparationSteps" class="sub-form">
+                    <mat-label>Preparation Steps</mat-label>
+                    <div *ngFor="let step of preparationStepsArray.controls; let i = index">
+                        <mat-form-field appearance="fill">
+                            <textarea matInput [formControlName]="i" placeholder="Preparation Step"></textarea>
+                        </mat-form-field>
+                        <button mat-icon-button (click)="removeStep(i)">
+                            <mat-icon>delete</mat-icon>
+                        </button>
+                    </div>
+                    <br>
+                    <button mat-raised-button color="pink" type="button" (click)="addStep()">
+                        <img src="../../../../assets/plus.png" class="small-image" />
+                    </button>
+
+                </div>
+
+
+
+                <div class="form-group">
+                    <mat-form-field appearance="fill">
+                        <mat-label>Image Path</mat-label>
+                        <input matInput type="text" [value]="'../../../../assets/5.jpg'" formControlName="imageUrl">
+                    </mat-form-field>
+                </div>
+
+                <button mat-raised-button color="pink" type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="rotating-icon-container" *ngIf="showRotatingIcon">
+    <mat-icon class="rotating-icon">cached</mat-icon>
+    <p>אינך מחובר במערכת</p>
+    <p>הינך מועבר להתחברות</p>
+</div> -->

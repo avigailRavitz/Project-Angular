@@ -1,0 +1,20 @@
+
+.img{
+   width: auto; /* גודל התמונה יתאם אוטומטית לרוחב */
+  height: 200px; /* קביעת גובה קבוע לתמונה */
+}
+.example-card {
+  width: 320px;
+  margin-bottom: 20px;
+  padding-bottom: 20px; /* הוספת padding תחתון */
+}
+
+.example-card:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0; /* אין padding תחתון אחרי הכרטיס האחרון */
+}
+
+// .example-header-image {
+//   background-image: url('../../../../assets/donut.png');
+//   background-size: cover;
+// }
