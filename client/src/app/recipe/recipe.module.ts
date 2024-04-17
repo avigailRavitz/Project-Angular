@@ -23,11 +23,12 @@ import { EditRecipeComponent } from './component/edit-recipe/edit-recipe.compone
 import { AddRecipeComponent } from './component/add-recipe/add-recipe.component';
 import { DurationPipe } from '../during.pipe';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 
 @NgModule({
-  declarations: [SmallRecipeComponent ,RecipesComponent,DetailsComponent,EditRecipeComponent,AddRecipeComponent,DurationPipe],
+  declarations: [SmallRecipeComponent ,RecipesComponent,DetailsComponent,AddRecipeComponent,EditRecipeComponent,DurationPipe],
   imports: [
 
     ReactiveFormsModule,
@@ -45,7 +46,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatIconModule,
     MatOptionModule,
     MatCheckboxModule,
-    
+    MatSliderModule,
     MatSidenavModule,
     MatButtonModule
 ],

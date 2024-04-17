@@ -61,13 +61,6 @@
             </svg></button>
         </div>
         <h2>choose categories :</h2>
-        <!-- <section class="categories-section">
-          <div *ngFor="let category of categoryList">
-            <mat-checkbox (change)="filterCategory(category.id)" [color]="'warn'">
-              <i class="material-icons">{{ category.routingIcon }}</i> {{category?.name}}
-            </mat-checkbox>
-          </div>
-        </section> -->
         <section class="categories-section">
           <div *ngFor="let category of categoryList">
             <mat-checkbox (change)="filterCategory(category.id)" [color]="'warn'">
@@ -76,14 +69,25 @@
             </mat-checkbox>
           </div>
         </section>
-        <div class="form-group">
-          <mat-form-field appearance="fill">
-            <mat-label>Difficulty Level Filter</mat-label>
-            <!-- <mat-icon matPrefix>stars</mat-icon> -->
-            <input matInput type="number" [(ngModel)]="difficultyLevel" (input)="filterAll()" placeholder="Enter Difficulty Level">
-          </mat-form-field>
+        <div id="level-slider" class="slider">
+          <h3 class="h-filter">דרגת קושי</h3>
+          <div>
+            <mat-slider class="slider"
+                        orientation="vertical"
+                        [color]="'accent'"
+                        [style.width.vw]="12"
+                        class="example-margin"
+                        [disabled]="disabled"
+                        [max]="5"
+                        [min]="1"
+                        [step]="step"
+                        [discrete]="thumbLabel"
+                        [showTickMarks]="showTicks"
+                        (input)="filterByDifficulty(value)">
+              <input matSliderThumb [(ngModel)]="value" #slider>
+            </mat-slider>
+          </div>
         </div>
-
 
       </li>
     </ul>

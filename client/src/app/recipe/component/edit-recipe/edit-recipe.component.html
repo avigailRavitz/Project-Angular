@@ -1,48 +1,48 @@
-
 <div class="all">
+  <app-nav-bar></app-nav-bar>
   <div class="container">
-      <form [formGroup]="recipeForm" (ngSubmit)="saveChanges()" class="form-container">
+    <form [formGroup]="recipeForm" (ngSubmit)="saveChanges()" class="form-container">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>שם המתכון</mat-label>
+        <input matInput formControlName="recipeName" class="input-field">
+      </mat-form-field>
+
+      <div class="form-group">
         <mat-form-field appearance="fill" class="full-width">
-          <mat-label>שם המתכון</mat-label>
-          <input matInput formControlName="recipeName" class="input-field">
+          <mat-label>קטגוריה</mat-label>
+          <mat-select formControlName="categoryCode">
+            <mat-option *ngFor="let category of categories" [value]="category.id">
+              {{ category.name }}
+              <mat-icon>{{ category.routingIcon }}</mat-icon>
+
+
+            </mat-option>
+          </mat-select>
         </mat-form-field>
-    
-        <div class="form-group">
-          <mat-form-field appearance="fill" class="full-width">
-              <mat-label>קטגוריה</mat-label>
-              <mat-select formControlName="categoryCode">
-                  <mat-option *ngFor="let category of categories" [value]="category.id">
-                    {{ category.name }}
-                    <mat-icon>{{ category.routingIcon }}</mat-icon>
-  
-                    
-                  </mat-option>
-                </mat-select>
-          </mat-form-field>
       </div>
-    
+
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Preparation Time (in minutes)</mat-label>
         <input matInput type="number" formControlName="preparationTimeInMinutes" class="input-field">
       </mat-form-field>
-      
+
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Difficulty Level</mat-label>
         <input matInput type="number" formControlName="difficultyLevel" class="input-field">
       </mat-form-field>
-      
+
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Ingredients (separated by commas)</mat-label>
         <textarea matInput formControlName="ingredients" class="input-field"></textarea>
       </mat-form-field>
-      
+
       <mat-form-field appearance="fill" class="full-width">
         <mat-label>Preparation Steps (each step on a separate line)</mat-label>
         <textarea matInput formControlName="preparationSteps" class="input-field"></textarea>
       </mat-form-field>
-      
-      <button mat-raised-button color="primary" type="submit">Save Changes</button>
-      
-      </form>
+
+      <button type="submit" class="save">Save Changes</button>
+
+    </form>
   </div>
-  </div>
+</div>

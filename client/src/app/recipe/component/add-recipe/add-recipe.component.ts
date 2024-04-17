@@ -1,9 +1,8 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormArray, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
 import { Category } from '../../../entities/Category.model';
 import { CategoryService } from '../../../../category.service';
@@ -11,38 +10,27 @@ import { RecipteService } from '../../recipte.service';
 import { Recipe } from '../../../entities/Recipe.model';
 import { User } from '../../../entities/User.model';
 import { UserService } from '../../../user/user.service';
+
 @Component({
   selector: 'app-add-recipe',
   templateUrl: './add-recipe.component.html',
-  styleUrls: ['./add-recipe.component.scss']
+  styleUrls: ['./add-recipe.component.scss'],
 })
 export class AddRecipeComponent implements OnInit {
-  userList?:User[]
-  recipeForm!: FormGroup ;
+  userList?: User[]
+  recipeForm!: FormGroup;
   categories: Category[] = []; // רשימת הקטגוריות
-  showRotatingIcon=false;
-   usercode?:number;
+  showRotatingIcon = false;
+  usercode?: number;
   constructor(
-    private formBuilder: FormBuilder, 
+    private formBuilder: FormBuilder,
     private router: Router,
-    private categoryService:CategoryService ,// שימוש בשירות הקטגוריות
-    private recipeService: RecipteService,private userService:UserService){}
-  
- 
-    ngOnInit(): void {
-   // const isLoggedIn = sessionStorage.getItem('username') && sessionStorage.getItem('password');
-    // if (!isLoggedIn) {
-    //   {
-    //     this.showRotatingIcon = true; // הצגת האייקון המסתובב
+    private categoryService: CategoryService,// שימוש בשירות הקטגוריות
+    private recipeService: RecipteService, private userService: UserService) { }
 
-    //     setTimeout(() => {
-    //       this.router.navigate(['/user/login']);
 
-    //     }, 2000); // אם רוצים שהאנימציה תמשך שתי שניות
-    //   }
-
-   // }
-this.userrrr();
+  ngOnInit(): void {
+    this.userrrr();
     this.initForm();
     this.loadCategories(); // טעינת רשימת הקטגוריות בזמן האתחול
 
@@ -51,7 +39,7 @@ this.userrrr();
     this.userService.getUserFromServer().subscribe({
       next: (res) => {
         this.userList = res,
-        console.log(this.userList)
+          console.log(this.userList)
       },
       error: (err) => {
         console.log(err)
@@ -72,7 +60,7 @@ this.userrrr();
       ingredients: this.formBuilder.array([]),
       preparationSteps: this.formBuilder.array([]),
       userCode: ['0', Validators.required],
-      imageUrl: [ "../../../../assets/5.jpg"]
+      imageUrl: ["../../../../assets/5.jpg"]
     });
   }
   loadCategories(): void {
@@ -82,12 +70,12 @@ this.userrrr();
   }
   get ingredients(): FormArray {
     return this.recipeForm.get('ingredients') as FormArray;
-}
-get preparationStepsArray(): FormArray {
-  return this.recipeForm.get('preparationSteps') as FormArray;
-}
+  }
+  get preparationStepsArray(): FormArray {
+    return this.recipeForm.get('preparationSteps') as FormArray;
+  }
 
-addIngredients(): void {
+  addIngredients(): void {
     (this.recipeForm.get('ingredients') as FormArray).push(this.formBuilder.control(''));
   }
 
@@ -102,7 +90,7 @@ addIngredients(): void {
   removeStep(index: number): void {
     (this.recipeForm.get('preparationSteps') as FormArray).removeAt(index);
   }
-  
+
 
 
 
@@ -111,19 +99,19 @@ addIngredients(): void {
     if (this.recipeForm.valid) {
       // הגדרת המתכון מהטופס
       const userCode: any = sessionStorage.getItem('password');
-      console.log("userCode",userCode)
+      console.log("userCode", userCode)
       // const userCodeNumber = parseInt(userCode);
       // console.log("userrrrrrrrrrrrrrrrrrrrrrr",userCodeNumber)
-// דוגמה לשימוש בפונקציה:
-const user= this.userList?.find(user => user.password === userCode);
-console.log("userrrrrrrrrrrr",user)
-const userCodeNumber = user?.id;
-console.log("userId",userCodeNumber)
-if (user) {
-  console.log("User found! User ID:", user.id);
-} else {
-  console.log("User not found with the given password.");
-}
+      // דוגמה לשימוש בפונקציה:
+      const user = this.userList?.find(user => user.password === userCode);
+      console.log("userrrrrrrrrrrr", user)
+      const userCodeNumber = user?.id;
+      console.log("userId", userCodeNumber)
+      if (user) {
+        console.log("User found! User ID:", user.id);
+      } else {
+        console.log("User not found with the given password.");
+      }
       const newRecipe: Recipe = {
         recipeCode: this.recipeForm.value.recipeCode,
         name: this.recipeForm.value.recipeName,
@@ -134,9 +122,9 @@ if (user) {
         ingredients: this.recipeForm.value.ingredients.filter((ingredient: string) => ingredient.trim() !== ''), // מסננים את הריקים
         preparationSteps: this.recipeForm.value.preparationSteps.filter((step: string) => step.trim() !== ''), // מסננים את הריקים
         userCode: user?.id,
-        
+
         imageUrl: this.recipeForm.value.imageUrl
-        
+
       };
       // console.log("userrrrrrrrrrrrrrrrrrrrrrr",userCodeNumber)
       // ביצוע בקשת POST לשרת
@@ -166,9 +154,10 @@ if (user) {
         text: 'נא למלא את כל השדות הנדרשים',
         icon: 'warning',
         confirmButtonText: 'אישו'
-     }
-  )};
-  
+      }
+      )
+    };
 
-}
+
   }
+}

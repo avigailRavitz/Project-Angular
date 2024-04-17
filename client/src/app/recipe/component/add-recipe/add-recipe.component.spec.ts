@@ -1,10 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormArray, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
 import { Router } from '@angular/router';
-
-
-import { HttpClient } from '@angular/common/http';
 import Swal from 'sweetalert2';
 import { Category } from '../../../entities/Category.model';
 import { CategoryService } from '../../../../category.service';

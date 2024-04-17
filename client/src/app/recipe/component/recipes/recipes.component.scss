@@ -1,11 +1,4 @@
 
-// .toggled{
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   justify-content: space-between;
-//   // margin-top: 110px; /* קטן את המרחק בין הכרטיסיות לראש הדף */
-// }
 
 .toggled::before {
   content: "";
@@ -14,7 +7,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../../../../assets/רקע.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.5; /* שקיפות של 50% */
@@ -29,7 +21,7 @@
 }
 
 .search-button {
-  background-color: #d39ea6;
+  background-color: rgb(211, 158, 166);
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -67,13 +59,13 @@
   margin-top: 100px;
 }
 
-.app-nav-bar {
-  background-color: #9b6b4b;
-  border-radius: 8px;
-  padding: 20px;
-  color: #fff;
+// .app-nav-bar {
+//   background-color: #9b6b4b;
+//   border-radius: 8px;
+//   padding: 20px;
+//   color: #fff;
 
-}
+// }
 
 .side-content {
   overflow-y: auto;

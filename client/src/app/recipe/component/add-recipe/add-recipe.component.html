@@ -71,8 +71,9 @@
                         </button>
                     </div>
                     <br>
-                    <button mat-raised-button color="pink" type="button" (click)="addIngredients()"><img
-                            src="../../../../assets/plus.png" class="small-image" /></button>
+                    <button mat-raised-button color="pink" type="button" (click)="addIngredients()">
+                        <mat-icon>add</mat-icon>
+                           </button>
                 </div>
 
                 <div formArrayName="preparationSteps" class="sub-form">
@@ -87,7 +88,7 @@
                     </div>
                     <br>
                     <button mat-raised-button color="pink" type="button" (click)="addStep()">
-                        <img src="../../../../assets/plus.png" class="small-image" />
+                        <mat-icon>add</mat-icon>
                     </button>
 
                 </div>
@@ -101,14 +102,8 @@
                     </mat-form-field>
                 </div>
 
-                <button mat-raised-button color="pink" type="submit">Save</button>
+                <button  type="submit" clas="submit">Submit</button>
             </form>
         </div>
     </div>
 </div>
-
-<!-- <div class="rotating-icon-container" *ngIf="showRotatingIcon">
-    <mat-icon class="rotating-icon">cached</mat-icon>
-    <p>אינך מחובר במערכת</p>
-    <p>הינך מועבר להתחברות</p>
-</div> -->

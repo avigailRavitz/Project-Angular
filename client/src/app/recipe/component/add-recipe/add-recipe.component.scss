@@ -83,7 +83,7 @@
   }
   .all{
     margin-top: 110px;
-    background-image: url('../../../../assets/רקע.webp');
+    background-color: #f0c3b5;
     background-size: cover; /* כדי להתאים את התמונה לגודל של החלון */
     background-attachment: fixed; /* כדי להשאיר את התמונה במקום כאשר ממסך נגללים */
     background-position: center center; /* כדי למקד את התמונה באמצע הדף */
@@ -127,5 +127,9 @@
     color: yellow; /* Change this to the desired color */
     background-color: aqua;
   }
-  
+  .submit{
+    color: black;
+    width: auto;
+    border-radius: 1px black;
+  }
   

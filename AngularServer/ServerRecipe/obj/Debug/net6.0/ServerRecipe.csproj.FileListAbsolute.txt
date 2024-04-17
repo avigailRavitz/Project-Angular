@@ -229,36 +229,135 @@ Y:\Groups\Group_3\פרוידיגר  חנה\Angular\יום שלישי\AngularServ
 Y:\Groups\Group_3\פרוידיגר  חנה\Angular\יום שלישי\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.pdb
 Y:\Groups\Group_3\פרוידיגר  חנה\Angular\יום שלישי\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.genruntimeconfig.cache
 Y:\Groups\Group_3\פרוידיגר  חנה\Angular\יום שלישי\AngularServer\ServerRecipe\obj\Debug\net6.0\ref\ServerRecipe.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.exe
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.deps.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.runtimeconfig.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.pdb
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.AssemblyReference.cache
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfoInputs.cache
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfo.cs
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.CoreCompileInputs.cache
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.sourcelink.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.ServerRecipe.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.build.ServerRecipe.props
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ServerRecipe.props
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ServerRecipe.props
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\scopedcss\bundle\ServerRecipe.styles.css
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRe.43DBB5B0.Up2Date
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\refint\ServerRecipe.dll
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.pdb
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.genruntimeconfig.cache
-C:\Users\USER\Desktop\אנגולר\AngularServer\ServerRecipe\obj\Debug\net6.0\ref\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.exe
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.deps.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.runtimeconfig.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.pdb
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfo.cs
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.sourcelink.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.ServerRecipe.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.build.ServerRecipe.props
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ServerRecipe.props
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ServerRecipe.props
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\scopedcss\bundle\ServerRecipe.styles.css
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRe.43DBB5B0.Up2Date
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\refint\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.pdb
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.genruntimeconfig.cache
+C:\Users\User\Desktop\חני תכנות\Angular\ProjectFinall\AngularServer\ServerRecipe\obj\Debug\net6.0\ref\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.exe
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.deps.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.runtimeconfig.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.pdb
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfo.cs
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.sourcelink.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.ServerRecipe.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.build.ServerRecipe.props
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ServerRecipe.props
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ServerRecipe.props
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\scopedcss\bundle\ServerRecipe.styles.css
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRe.43DBB5B0.Up2Date
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\refint\ServerRecipe.dll
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.pdb
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.genruntimeconfig.cache
+C:\Users\User\Desktop\חני תכנות\Angular\Finallllllllllllllllllllllll\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ref\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.exe
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.deps.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.runtimeconfig.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.pdb
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfo.cs
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.sourcelink.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.ServerRecipe.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.build.ServerRecipe.props
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ServerRecipe.props
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ServerRecipe.props
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\scopedcss\bundle\ServerRecipe.styles.css
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRe.43DBB5B0.Up2Date
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\refint\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.pdb
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.genruntimeconfig.cache
+C:\Users\USER\Desktop\אנגולר חני\AngularProject\AngularServer\ServerRecipe\obj\Debug\net6.0\ref\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\appsettings.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.exe
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.deps.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.runtimeconfig.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\ServerRecipe.pdb
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.AssemblyInfo.cs
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.sourcelink.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.ServerRecipe.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.build.ServerRecipe.props
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ServerRecipe.props
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ServerRecipe.props
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\scopedcss\bundle\ServerRecipe.styles.css
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRe.43DBB5B0.Up2Date
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\refint\ServerRecipe.dll
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.pdb
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ServerRecipe.genruntimeconfig.cache
+C:\Users\USER\Desktop\אנגולר\Project-Angular\AngularServer\ServerRecipe\obj\Debug\net6.0\ref\ServerRecipe.dll
